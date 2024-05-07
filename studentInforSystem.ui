@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1003</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#info_frame {
+	background_color: #fff;
+	border: none;
+	border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="Form">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#info_frame {
+	background_color: #fff;
+	border: none;
+	border-radius: 5px;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <widget class="QLabel" name="title_label">
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#title_label {
+	background_color: #fff;
+}</string>
+      </property>
+      <property name="text">
+       <string>Students Infomation System</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>120</number>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>First Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Last Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Student ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Gender</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Email Address</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QFrame" name="icons_frame">
+      <property name="styleSheet">
+       <string notr="true">#info_frame {
+	background_color: #fff;
+	border: none;
+	border-radius: 5px;
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <property name="leftMargin">
+        <number>40</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>40</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="addBtn">
+         <property name="text">
+          <string>Add</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/add.svg</normaloff>icons/add.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="updateBtn">
+         <property name="text">
+          <string>Update</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/update.svg</normaloff>icons/update.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="selectBtn">
+         <property name="text">
+          <string>Select</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/select.svg</normaloff>icons/select.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="searchBtn">
+         <property name="text">
+          <string>Search</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/search.svg</normaloff>icons/search.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="clearBtn">
+         <property name="text">
+          <string>Clear</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/clear.svg</normaloff>icons/clear.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="deleteBtn">
+         <property name="text">
+          <string>Delete</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>icons/delete.svg</normaloff>icons/delete.svg</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="info_frame">
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#info_frame #gridLayout {
+	background_color: #fff;
+	border: none;
+	border-radius: 5px;
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetFixedSize</enum>
+       </property>
+       <property name="leftMargin">
+        <number>40</number>
+       </property>
+       <property name="topMargin">
+        <number>40</number>
+       </property>
+       <property name="rightMargin">
+        <number>40</number>
+       </property>
+       <property name="bottomMargin">
+        <number>30</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>60</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>15</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="first_name_label">
+           <property name="text">
+            <string>First Name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="studentID">
+           <property name="placeholderText">
+            <string>Enter ID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="last_name_label">
+           <property name="text">
+            <string>Last Name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="id_label">
+           <property name="text">
+            <string>Student ID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="firstName">
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>Enter first name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lastName">
+           <property name="placeholderText">
+            <string>Enter last name</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>15</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="gender_label">
+           <property name="text">
+            <string>Gender</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="gender"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="city_label">
+           <property name="text">
+            <string>City</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="city"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="email_label">
+           <property name="text">
+            <string>Email Address</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="email">
+           <property name="placeholderText">
+            <string>Enter email address</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
